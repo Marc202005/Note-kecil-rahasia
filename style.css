@@ -1,0 +1,177 @@
+/* ===== BODY & FONT ===== */
+body {
+    background: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ===== COVER ===== */
+.cover {
+    background: #fff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.cover h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.open-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0; left:0;
+    cursor: pointer;
+}
+
+/* ===== BOOK PAGES ===== */
+.book {
+    width: 500px;
+    position: relative;
+}
+
+.page {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 25px;
+    min-height: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: none;
+    position: relative;
+    overflow: hidden;
+
+    /* Paper texture effect */
+    background-image: linear-gradient(white 95%, #f0f0f0 100%);
+    background-size: 100% 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* ===== TYPING TEXT ===== */
+.typing {
+    font-size: 20px;
+    line-height: 2.3;
+}
+
+/* ===== MUSIC PAGE ===== */
+.music-page h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.music-controls button {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.music-controls button:hover {
+    background: #a5a5a5;
+}
+
+.music-controls input[type="range"] {
+    width: 120px;
+}
+
+/* ===== BIBLE PAGE ===== */
+.bible-page h2 {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bible-page p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ===== FINAL PAGE ===== */
+.final-page h2 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+}
+
+.final-photo {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.final-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.signature {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav span {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.nav span:hover {
+    color: #000000;
+}
+
+#pageIndicator {
+    font-size: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 550px){
+    .cover, .book {
+        width: 90%;
+    }
+    .music-controls input[type="range"] {
+        width: 80px;
+    }
+}

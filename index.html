@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Rahasia Negara 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- COVER -->
+<div id="cover" class="cover">
+    <h1 id="coverText">A little note, for</h1>
+    <h1 id="coverText">Lolo Sipahutar</h1>
+    <img src="Bunga 2.png" alt="Foto Kenangan" class="final-photo">
+    <div class="open-area" id="openBtn"></div>
+</div>
+
+<!-- BOOK -->
+<div id="book" class="book" style="display:none;">
+
+    <!-- PAGE 1 -->
+    <div class="page book-page active">
+        <h2>Happy Sweet Seventeen</h2>
+        <p class="typing"> Today is a special day for you. May happiness always find its way to your heart, and may your smile remain even through the quiet challenges of life ✨
+
+As you continue to pursue your dreams, whether your path leads you to STIN, STIS, or university. remember that every effort you make has meaning. Progress may feel slow at times, but each step forward is shaping the future you are working toward.
+
+There will be moments of doubt and uncertainty, and that is part of the journey. Take them as reminders to pause, reflect, and trust yourself. You are capable, resilient, and stronger than you realize. I hope you keep moving forward with confidence and a heart full of hope.</p>
+    </div>
+
+    <!-- PAGE 2: MUSIC -->
+    <div class="page book-page music-page">
+        <h2>Isn't She Lovely ???</h2>
+        <p class="lyrics typing">Isn't she lovely, Isn't Wonderful, Isn't she precious, Less than one minute old
+<p class="lyrics typing">I never thought through love we'd be, Making one as lovely as she, But isn't she lovely, made from love</p>
+<p class="lyrics typing">Isn't she pretty, Truly the angel's best, Boy, I'm so happy, We have been heaven blessed</p>
+<p class="lyrics typing">I can't believe what God has done, Through us he's given life to one, But isn't she lovely, made from love</p>
+<p class="lyrics typing">Isn't she lovely, Life and love are the same, Life is Aisha, The meaning of her name, Londie, it could have not been done, Without you who conceived the one, That's so very lovely, made from love, hey</p>
+        <audio id="musik" src="Isn't She Lovely.mp3"></audio>
+        <div class="music-controls">
+            <button id="playBtn">Play</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="stopBtn">Stop</button>
+            <label for="volumeSlider">Volume:</label>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <!-- PAGE 3: ALKITAB -->
+    <div class="page book-page bible-page">
+        <h2>Roma 12:12</h2>
+        <p class="verse typing">“Rejoice in hope, be patient in tribulation, be constant in prayer.”</p>
+        <p class="verse typing">May these words be your guide in every step of life. When times feel heavy or challenges arise, let hope lead your heart and let prayer be your source of strength.</p>
+        <p class="verse typing">Remember, you are never alone. May each day bring you smiles, peace, and courage to keep moving forward with a heart full of hope and prayer. You are truly special, and I hope these words always remind you of that.</p>
+    </div>
+
+    <!-- PAGE 4: FINAL -->
+    <div class="page book-page final-page">
+        <h2>Thank You</h2>
+        <img src="Lolo png.jpg" alt="Foto Kenangan" class="final-photo">
+        <p class="final-text typing">May these small pages always remind you that you are precious and never truly alone.</p>
+        <p class="signature">Warmly, Ollec 🦈</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <span id="prevBtn">⬅</span>
+        <span id="pageIndicator"></span>
+        <span id="nextBtn">➡</span>
+    </div>
+
+</div>
+
+<!-- PAGE FLIP SOUND -->
+<audio id="flipSound" src="page-flip.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
